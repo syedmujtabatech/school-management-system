@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  crescent-school-erp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crescent_school_erp
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_URL: http://localhost:8000
+      PORT: 8000
+    volumes:
+      - ./database/database.sqlite:/var/www/database/database.sqlite
+      - ./storage:/var/www/storage
