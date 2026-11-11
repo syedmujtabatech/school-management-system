@@ -1,0 +1,22 @@
+{
+  "name": "apex-school-management-system",
+  "version": "2.6.0",
+  "description": "Next-Gen School ERP & Student Management System with AI Early Warning & Admin Download Center",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "school-management",
+    "edtech",
+    "erp",
+    "ai-student-success",
+    "fee-management",
+    "attendance",
+    "marksheet",
+    "challan-generator"
+  ],
+  "author": "Apex EdTech Systems",
+  "license": "MIT"
+}
